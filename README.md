@@ -4,10 +4,10 @@ I noticed that I was frequently copying text from web pages to Chat GPT and thou
 
 What made this project even more enjoyable was using Remotion. It's an innovative library that transforms React code into videos, essentially turning your code into a dynamic video editor. It made crafting a video guide for the extension a breeze!
 
-👩‍💻 Extension Github Repo: https://lnkd.in/gHCcM3Rf
+👩‍💻 Extension Github Repo: https://github.com/BrianARuff/ask-chat-gpt-extension
 
-🎥 Video Guide (made with Remotion): https://lnkd.in/g6VPQpd2
+🎥 YoutTube Video Guide (made with Remotion): https://www.youtube.com/watch?v=I8HxHOAuylY
 
-📚 Video Guide Github Repo (Made with Remotion if you're interested in the code; it's a very simple project, just one file): https://lnkd.in/g2MpiJ7G
+📚 Video Guide Github Repo (Made with Remotion if you're interested in the code; it's a very simple project, just one file): https://github.com/BrianARuff/ask-chat-gpt-extension-video
 
 I hope you find this small tool handy and enjoy the convenience it brings to your Chat GPT experience! Have you ever created something to solve a small annoyance in your daily workflow? Let me know your thoughts. 😊
