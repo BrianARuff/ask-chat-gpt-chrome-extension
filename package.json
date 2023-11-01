@@ -1,0 +1,17 @@
+{
+  "name": "ask-chat-gpt-extension",
+  "version": "1.0.0",
+  "description": "Ask Chat GPT about various information you find on the internet.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ask-chat-gpt-extensions"
+  ],
+  "author": "Brian Ruff",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.52.0"
+  }
+}
