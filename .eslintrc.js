@@ -52,4 +52,3 @@ module.exports = {
 		'CHAT_GPT_URL': 'readonly',
 	}
 };
-
