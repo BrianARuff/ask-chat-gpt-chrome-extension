@@ -14,9 +14,9 @@ What made this project even more enjoyable was using Remotion. It's an innovativ
 
 I hope you find this small tool handy and enjoy the convenience it brings to your Chat GPT experience! Have you ever created something to solve a small annoyance in your daily workflow? Let me know your thoughts. 😊
 
-## **⚠️ Warning**
+## **<img src="./icons/icon32.png" /> Updated Icons**
 
-> You may encounter a message from Chat GPT stating, "Our systems have detected unusual activity from your system. Please try again later." or a similar alert. As of November 2, 2023, I have received this message approximately 10 times and continue to use my paid premium Chat-GPT account without issues. I **believe** this message is a precaution to ensure users are not bots, and clicking "try again" should resolve the issue. In my experience, it has always worked fine. While I don't anticipate OpenAI taking action against user accounts for this reason, I find it ethically important to inform you about the possibility of encountering this warning. Below is a screenshot of the warning message for reference.
+> Due to restrictions in OpenAI's Terms of Service, which prevent the use of their icons by third parties, we have updated our extension to feature new icons. We hope you like the fresh look! The green "chat-bot" icon next to the header above ("Updated Icons") is the new (32x32 pixel) icon.
 
 ![OpenAI Unusual Activity Warning](./detected-unusual-activity.jpg)
 
@@ -24,6 +24,6 @@ I hope you find this small tool handy and enjoy the convenience it brings to you
 
 > This application is designed with user privacy in mind and does not collect or store any personal information. Once your text is processed by Chat-GPT, it is promptly removed from any temporary storage. Furthermore, we have taken steps to ensure that the app aligns with Chat-GPT's terms of service.
 
-## **<img src="./icons/icon32.png" /> Updated Icons**
+## **⚠️ Warning**
 
-Due to restrictions in OpenAI's Terms of Service, which prevent the use of their icons by third parties, we have updated our extension to feature new icons. We hope you like the fresh look! The green "chat-bot" icon next to the header above ("Updated Icons") is the new (32x32 pixel) icon.
+> You may encounter a message from Chat GPT stating, "Our systems have detected unusual activity from your system. Please try again later." or a similar alert. As of November 2, 2023, I have received this message approximately 10 times and continue to use my paid premium Chat-GPT account without issues. I **believe** this message is a precaution to ensure users are not bots, and clicking "try again" should resolve the issue. In my experience, it has always worked fine. While I don't anticipate OpenAI taking action against user accounts for this reason, I find it ethically important to inform you about the possibility of encountering this warning. Below is a screenshot of the warning message for reference.
