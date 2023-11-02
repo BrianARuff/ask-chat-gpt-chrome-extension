@@ -8,28 +8,30 @@ const activateSendButton = (textArea) => {
 };
 
 chrome.storage.local.get('selectedText', (data) => {
-	const askChatGPTInterval = setInterval(() => {
-		if (data.selectedText) {
-			const textArea = document.querySelector('#prompt-textarea');
+	if (data.selectedText) {
+		const askChatGPTInterval = setInterval(() => {
+			if (data.selectedText) {
+				const textArea = document.querySelector('#prompt-textarea');
+						
+				if (textArea) {				
+					const textToInsert = `Kindly elucidate on:\n\n "${data.selectedText}"`;
 					
-			if (textArea) {				
-				const textToInsert = `Kindly elucidate on:\n\n "${data.selectedText}"`;
-				
-				textArea.value = textToInsert;
-				
-				activateSendButton(textArea);
+					textArea.value = textToInsert;
+					
+					activateSendButton(textArea);
+				}
 			}
-		}
-
-		const sendButton = document.querySelector('[data-testid="send-button"]');
-
-		if (sendButton && !sendButton.disabled) {
-			
-			clearInterval(askChatGPTInterval);
-			
-			sendButton.click();
-			
-			chrome.storage.local.remove('selectedText');
-		}
-	}, 300);
+	
+			const sendButton = document.querySelector('[data-testid="send-button"]');
+	
+			if (sendButton && !sendButton.disabled) {
+				
+				clearInterval(askChatGPTInterval);
+				
+				sendButton.click();
+				
+				chrome.storage.local.remove('selectedText');
+			}
+		}, 300);
+	}
 });
