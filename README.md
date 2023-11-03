@@ -18,12 +18,12 @@ I hope you find this small tool handy and enjoy the convenience it brings to you
 
 > Due to restrictions in OpenAI's Terms of Service, which prevent the use of their icons by third parties, we have updated our extension to feature new icons. We hope you like the fresh look! The green "chat-bot" icon next to the header above ("Updated Icons") is the new (32x32 pixel) icon.
 
-![OpenAI Unusual Activity Warning](./detected-unusual-activity.jpg)
-
 ## **🔒 Privacy and Compliance Assurance**
 
 > This application is designed with user privacy in mind and does not collect or store any personal information. Once your text is processed by Chat-GPT, it is promptly removed from any temporary storage. Furthermore, we have taken steps to ensure that the app aligns with Chat-GPT's terms of service.
 
 ## **⚠️ Warning**
 
-> You may encounter a message from Chat GPT stating, "Our systems have detected unusual activity from your system. Please try again later." or a similar alert. As of November 2, 2023, I have received this message approximately 10 times and continue to use my paid premium Chat-GPT account without issues. I **believe** this message is a precaution to ensure users are not bots, and clicking "try again" should resolve the issue. In my experience, it has always worked fine. While I don't anticipate OpenAI taking action against user accounts for this reason, I find it ethically important to inform you about the possibility of encountering this warning. Below is a screenshot of the warning message for reference.
+> You may encounter a message from Chat GPT stating, "Our systems have detected unusual activity from your system. Please try again later." or a similar alert. As of November 2, 2023, I have received this message approximately 10 times and continue to use my paid premium Chat-GPT account without issues. I **believe** this message is a precaution to ensure users are not bots, and clicking "try again" should resolve the issue. In my experience, it has always worked fine. While I don't anticipate OpenAI taking action against user accounts for this reason, I find it ethically important to inform you about the possibility of encountering this warning. Below is a screenshot of the warning message for reference. Chat GPT requires you to click the "Regenerate" button, and I've recently implemented a workaronud for this by calling `.click` on the "Regenerate" button, if it's found, and for now, at least, this seems to be working. If Open-AI updates the UI in the future, I"ll try and update the code with another workaround, if needed, that is.
+
+![OpenAI Unusual Activity Warning](./detected-unusual-activity.jpg)
