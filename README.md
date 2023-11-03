@@ -18,9 +18,9 @@ I hope you find this small tool handy and enjoy the convenience it brings to you
 
 > Due to restrictions in OpenAI's Terms of Service, which prevent the use of their icons by third parties, we have updated our extension to feature new icons. We hope you like the fresh look! The green "chat-bot" icon next to the header above ("Updated Icons") is the new (32x32 pixel) icon.
 
-## **🔒 Privacy and Compliance Assurance**
+## **🔒 Privacy Policy and Compliance Assurance**
 
-> This application is designed with user privacy in mind and does not collect or store any personal information. Once your text is processed by Chat-GPT, it is promptly removed from any temporary storage. Furthermore, we have taken steps to ensure that the app aligns with Chat-GPT's terms of service.
+> This application is designed with user privacy in mind and does not collect or store any personal information. Once your text is processed by Chat-GPT, it is promptly removed from any temporary storage. Furthermore, we have taken steps to ensure that the app aligns with Chat-GPT's terms of service. Lastly, we do not collect any user data. We temporarily store what you highlight in chrome's local storage, and then delete it as soon as it's pasted in to the Chat-GPT search textarea.
 
 ## **⚠️ Warning**
 
