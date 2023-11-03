@@ -1,16 +1,23 @@
 const state = {
 	shouldCleanUp: false,
+	gpt4Button: null
 };
 
 chrome.storage.local.get('selectedText', (data) => main(data));
 
 const main = async (data) => {
 	if (data.selectedText) {
-		inputSelectedText(data);
+		// timeout is to ensure the textarea has loaded
+		setTimeout(() => {
+			inputSelectedText(data);
+		}, 1000);
 
-		clickChatGPT4Button();
+		await clickChatGPT4Button();
 
-		submitQuestionToChatGPT();
+		// timeout is to ensure the submit button is clickable
+		setTimeout(() => {
+			submitQuestionToChatGPT();
+		}, 1000);
 
 		chrome.storage.local.remove('selectedText');
 	}
@@ -27,7 +34,10 @@ const inputSelectedText = (data) => {
 		textArea.value = textToInsert;
 
 		// simulates typing to enable the submit button
-		const inputEvent = new Event('input');
+		const inputEvent = new Event('input', {
+			bubbles: true,
+			cancelable: true
+		});
 
 		textArea.dispatchEvent(inputEvent);
 	}
@@ -48,21 +58,28 @@ const waitForChatGPT4Button = async () => {
 			if (chatGPT4Button && !chatGPT4Button.disabled) {
 				clearInterval(interval);
 
-				loadingModalPortal.remove();
+				if (loadingModalPortal) {
+					loadingModalPortal.remove();
+				}
 
-				resolve(chatGPT4Button);
+				state.gpt4Button = chatGPT4Button;
+
+				resolve();
 			}
 
 			const regenerateButton = [...document.querySelectorAll('div')].filter(svg => svg.innerText === 'Regenerate')[1];
 
 			// This is the "unusual activity" message workaround
 			if (regenerateButton) {
+				if (loadingModalPortal) {
+					loadingModalPortal.remove();
+				}
+
+				// wait for the button to be clickable
 				setTimeout(() => {
 					regenerateButton.click();
 
 					clearInterval(interval);
-
-					loadingModalPortal.remove();
 				}, 1000);
 			}
 
@@ -70,9 +87,11 @@ const waitForChatGPT4Button = async () => {
 
 			// 5 seconds have passed or something else went wrong, either way, we need to stop trying to check for the button
 			if (elapsedTime >= timeoutMillis) {
-				clearInterval(interval);
+				if (loadingModalPortal) {
+					loadingModalPortal.remove();
+				}
 
-				loadingModalPortal.remove();
+				clearInterval(interval);
 
 				reject(new Error(`It is possible your network is having problems loading the page within ${timeoutMillis} milliseconds if you are seeing this alert. In which case, you will need to either try again later once your network is more stable, or are on a network with a faster coonection.`));
 			}
@@ -82,10 +101,10 @@ const waitForChatGPT4Button = async () => {
 
 const clickChatGPT4Button = async () => {
 	try {
-		const chatGPT4Button = await waitForChatGPT4Button();
+		await waitForChatGPT4Button();
 
-		if (chatGPT4Button && !chatGPT4Button.disabled) {
-			chatGPT4Button.click();
+		if (state.gpt4Button && !state.gpt4Button.disabled) {
+			state.gpt4Button.click();
 		}
 	} catch (error) {
 		alert(error);
@@ -177,3 +196,4 @@ const getRandomLeadInText = () => {
 
 	return leadInList[randomIndex];
 };
+// comment
