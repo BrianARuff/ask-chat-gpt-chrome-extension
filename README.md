@@ -22,7 +22,7 @@ I hope you find this tool handy! Have you ever created something to solve a smal
 
 > You may encounter a message from Chat GPT stating, "Our systems have detected unusual activity...". As of November 2, 2023, I've received this message ~10 times but continue to use my paid premium account without issues. Clicking "try again" should resolve the issue. While I don't anticipate OpenAI taking action against user accounts, it's ethically important to inform you about this warning.
 
-### Update
+#### Update
 > I have made recent updates to the extension source code that should prevent this from happening as often as it was previously. However, I can't guarentee that it will never show again, that said, I haven't seen it personally since making the update to the source code.
 
 ![OpenAI Unusual Activity Warning](frontend/images/detected-unusual-activity.jpg)
