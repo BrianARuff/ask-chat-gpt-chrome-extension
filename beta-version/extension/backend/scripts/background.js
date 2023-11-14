@@ -8,13 +8,17 @@ chrome.runtime.onInstalled.addListener(() => {
 
 const contextMenuListener = (info, tab) => {
 	if (info.menuItemId === 'ask-gpt') {
-		chrome.tabs.sendMessage(tab.id, { action: 'getSelectedText' }, (response) => {
-			const selectedText = response.selectedText;
+		chrome.tabs.sendMessage(
+			tab.id,
+			{ action: 'getSelectedText' },
+			(response) => {
+				const { selectedText } = response;
 
-			chrome.storage.local.set({ 'selectedText': selectedText }, () => {
-				chrome.tabs.create({ url: 'https://chat.openai.com/' });
-			});
-		});
+				chrome.storage.local.set({ selectedText }, () => {
+					chrome.tabs.create({ url: 'https://chat.openai.com/' });
+				});
+			},
+		);
 	}
 };
 

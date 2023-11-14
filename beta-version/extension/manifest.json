@@ -1,37 +1,37 @@
 {
-  "manifest_version": 3,
-  "name": "Ask Chat GPT Extension",
-  "version": "1.2",
-  "description": "Ask Chat GPT about highlighted text",
-  "permissions": ["activeTab", "storage", "contextMenus"],
-  "action": {
-    "default_icon": {
-      "16": "frontend/images/icons/icon16.png",
-      "32": "frontend/images/icons/icon32.png",
-      "48": "frontend/images/icons/icon48.png",
-      "64": "frontend/images/icons/icon64.png",
-      "128": "frontend/images/icons/icon128.png"
-    }
-  },
-  "background": {
-    "service_worker": "backend/scripts/background.js"
-  },
-  "icons": {
-    "16": "frontend/images/icons/icon16.png",
-    "32": "frontend/images/icons/icon32.png",
-    "48": "frontend/images/icons/icon48.png",
-    "64": "frontend/images/icons/icon64.png",
-    "128": "frontend/images/icons/icon128.png"
-  },
-  "content_scripts": [
-    {
-      "matches": ["http://*/*", "https://*/*", "file://*/*", "ftp://*/*"],
-      "js": ["frontend/scripts/getSelectedText.js"]
-    },
-    {
-      "matches": ["https://chat.openai.com/*"],
-      "js": ["frontend/scripts/content.js"],
-      "css": ["frontend/css/content.css"]
-    }
-  ]
+	"manifest_version": 3,
+	"name": "Ask Chat GPT Extension",
+	"version": "1.2",
+	"description": "Ask Chat GPT about highlighted text",
+	"permissions": ["activeTab", "storage", "contextMenus"],
+	"action": {
+		"default_icon": {
+			"16": "frontend/images/icons/icon16.png",
+			"32": "frontend/images/icons/icon32.png",
+			"48": "frontend/images/icons/icon48.png",
+			"64": "frontend/images/icons/icon64.png",
+			"128": "frontend/images/icons/icon128.png"
+		}
+	},
+	"background": {
+		"service_worker": "backend/scripts/background.js"
+	},
+	"icons": {
+		"16": "frontend/images/icons/icon16.png",
+		"32": "frontend/images/icons/icon32.png",
+		"48": "frontend/images/icons/icon48.png",
+		"64": "frontend/images/icons/icon64.png",
+		"128": "frontend/images/icons/icon128.png"
+	},
+	"content_scripts": [
+		{
+			"matches": ["http://*/*", "https://*/*", "file://*/*", "ftp://*/*"],
+			"js": ["frontend/scripts/getSelectedText.js"]
+		},
+		{
+			"matches": ["https://chat.openai.com/*"],
+			"js": ["frontend/scripts/content.js"],
+			"css": ["frontend/css/content.css"]
+		}
+	]
 }
