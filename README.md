@@ -5,17 +5,15 @@
 **What made this project enjoyable** was using Remotion—an innovative library that transforms React code into videos. It made crafting a video guide for the extension a breeze!
 
 - 👩‍💻 **Extension Github Repo:** [Ask Chat GPT Extension](https://github.com/BrianARuff/ask-chat-gpt-extension)
+  - Note that you would only need to install via the repo if you were wanting to either only install locally or access the beta version. If you want to install via the chrome store, then please just use that link.
 - 🎥 **YouTube Video Guide** (made with Remotion): [Watch here](https://www.youtube.com/watch?v=I8HxHOAuylY)
 
-  - Note that the video is for local installation, not installing via the Chrome extension store. If you are installing via the chrome store, just use the add extension button install this extension :).
+  - Note that the video is for local installation, not installing via the Chrome extension store. If you are installing via the chrome store, please just use the add extension button install this extension.
 
 - 📚 **Video Guide Github Repo** (Made with Remotion): [Check out the code](https://github.com/BrianARuff/ask-chat-gpt-extension-video)
+  - Again, this is for local installation purposes only. There is no need to view this if all you want to do is install the extension through Chrome. Please just use the chrome add extension button instead.
 
 I hope you find this tool handy! Have you ever created something to solve a small annoyance in your workflow? Let me know your thoughts. 😊
-
-## Support 🙋‍♂️
-
-> If you are in need of support or want to contact me in regards to this application, please do so at [brff19@gmail.com](mailto:brff19@gmail.com).
 
 ## Updated Icons 🔄
 
