@@ -25,6 +25,6 @@
    > We may update this policy occasionally. Any changes will be posted on this page with an updated "Last updated" date.
 
 7. **Contact Us**
-   > If you have any questions or concerns regarding this privacy policy, please contact us at brff19@gmail.com.
+   > If you have any questions or concerns regarding this privacy policy, please contact us at [brff19@gmail.com](mailto:brff19@gmail.com).
 
-#### Last updated: November 3, 2023
+## Last updated: November 3, 2023
