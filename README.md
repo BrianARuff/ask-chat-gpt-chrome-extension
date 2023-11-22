@@ -6,9 +6,16 @@
 
 - 👩‍💻 **Extension Github Repo:** [Ask Chat GPT Extension](https://github.com/BrianARuff/ask-chat-gpt-extension)
 - 🎥 **YouTube Video Guide** (made with Remotion): [Watch here](https://www.youtube.com/watch?v=I8HxHOAuylY)
+
+  - Note that the video is for local installation, not installing via the Chrome extension store. If you are installing via the chrome store, just use the add extension button install this extension :).
+
 - 📚 **Video Guide Github Repo** (Made with Remotion): [Check out the code](https://github.com/BrianARuff/ask-chat-gpt-extension-video)
 
 I hope you find this tool handy! Have you ever created something to solve a small annoyance in your workflow? Let me know your thoughts. 😊
+
+## Support 🙋‍♂️
+
+> If you are in need of support or want to contact me in regards to this application, please do so at [brff19@gmail.com](mailto:brff19@gmail.com).
 
 ## Updated Icons 🔄
 
@@ -31,6 +38,10 @@ I hope you find this tool handy! Have you ever created something to solve a smal
 **_11/13/2023_**
 
 > I removed the code that was causing a warning message to show when the extension was being installed from the Google Chrome extension store. The matches property for a content script was previously set to "all_urls", which is why the warning will show. Thus, I've updated the code so that it will now work on http, https, file, and ftp based URLs. That should cover the vast majority of potential use cases, so the end result for users will be like nothing ever happened, outside of the install warning no longer showing up on the initial install.
+
+**_11/22/2023_**
+
+> I changed the manifest file so that user should no longer get a warning message to appear when initially installing the application. A previous fix back on 11/13/2023 was meant to fix this, but it was not, thus I'm trying this new approach out. I will update it later on if anything else is needed.
 
 ![OpenAI Unusual Activity Warning](frontend/images/detected-unusual-activity.jpg)
 
