@@ -29,6 +29,10 @@ I hope you find this tool handy! Have you ever created something to solve a smal
 
 ## Updates Listed Here
 
+**_11/23/2023_**
+
+> Previous update didn't solve the problem, so I'm resorting to only allowing the application to access https web sites. Hopefully, this will solve the security warning problem.
+
 **_11/11/2023_**
 
 > I have made recent updates to the extension source code that should prevent this from happening as often as it was previously. However, I can't guarentee that it will never show again, that said, I haven't seen it personally since making the update to the source code.
