@@ -1,7 +1,7 @@
 {
 	"manifest_version": 3,
 	"name": "Ask Chat GPT Extension",
-	"version": "1.5",
+	"version": "2.0.0",
 	"description": "Ask Chat GPT about highlighted text",
 	"permissions": ["activeTab", "storage", "contextMenus"],
 	"action": {

@@ -29,6 +29,9 @@ I hope you find this tool handy! Have you ever created something to solve a smal
 
 ## Updates Listed Here
 
+**_10/14/2024_**
+> Updated extension logic to work with the new Chat GPT domain (was previously Open AI domain), and with their new user interface, which is drastically different than the old one, which was when Chat GPT had only released very 3, 3.5, and 4.
+
 **_11/23/2023_**
 
 > Previous update didn't solve the problem, so I'm resorting to only allowing the application to access https web sites. Hopefully, this will solve the security warning problem.
